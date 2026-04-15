@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umrao Singh Nursery Primary School | Since 1939</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .serif-title {
+            font-family: 'Crimson Pro', serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .nav-scrolled {
+            background-color: white !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            color: #1a365d !important;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Top Bar -->
+    <div class="bg-blue-900 text-white text-sm py-2 px-4 hidden md:block">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <i class="fas fa-map-marker-alt mr-2"></i> 31/35, Chandni Chowk, New Delhi - 110006
+            </div>
+            <div class="flex gap-4">
+                <span><i class="fas fa-phone mr-2"></i> +91 11 2345 6789</span>
+                <span><i class="fas fa-envelope mr-2"></i> info@umraosinghschool.edu</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="sticky top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-blue-900 text-white p-2 rounded-lg">
+                    <i class="fas fa-school fa-2x"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-blue-900 leading-tight">Umrao Singh</h1>
+                    <p class="text-xs uppercase tracking-widest text-gray-500">Nursery Primary School</p>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex gap-8 font-semibold text-gray-700">
+                <a href="#home" class="hover:text-blue-900">Home</a>
+                <a href="#about" class="hover:text-blue-900">Our Legacy</a>
+                <a href="#academics" class="hover:text-blue-900">Academics</a>
+                <a href="#contact" class="hover:text-blue-900">Contact</a>
+            </div>
+
+            <a href="#contact" class="bg-blue-900 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-800 transition md:block hidden text-center">
+                Visit Us
+            </a>
+            
+            <button class="md:hidden text-2xl text-blue-900" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 shadow-lg">
+            <div class="flex flex-col gap-4 font-semibold">
+                <a href="#home" onclick="toggleMenu()">Home</a>
+                <a href="#about" onclick="toggleMenu()">Our Legacy</a>
+                <a href="#academics" onclick="toggleMenu()">Academics</a>
+                <a href="#contact" onclick="toggleMenu()">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient h-[80vh] flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-4xl">
+            <span class="inline-block bg-blue-600/30 backdrop-blur-md px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase mb-4">Established 1939</span>
+            <h2 class="text-4xl md:text-7xl font-bold serif-title mb-6 leading-tight">Nurturing Young Minds Through Charity & Care</h2>
+            <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto font-light">
+                Providing quality English Medium education to the heart of Chandni Chowk for over 85 years. From Pre-Nursery to Class 5.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition shadow-xl">
+                    Get Admission Details
+                </a>
+                <a href="#about" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition">
+                    Learn About Our History
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Books" class="rounded-2xl shadow-lg mt-8">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Students" class="rounded-2xl shadow-lg">
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 lg:pl-12">
+                    <span class="text-blue-600 font-bold uppercase tracking-widest text-sm">A Century of Service</span>
+                    <h3 class="text-3xl md:text-4xl font-bold serif-title text-blue-900 mt-2 mb-6">A Legacy of Charitable Education Since 1939</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Umrao Singh Nursery Primary School was founded in 1939 with a noble mission: to provide high-quality English Medium education to children regardless of their economic background. Located in the historic heart of Chandni Chowk, we have stood the test of time as a pillar of community service.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h4 class="text-3xl font-bold text-blue-900">85+</h4>
+                            <p class="text-sm text-gray-500 uppercase tracking-wide">Years of Excellence</p>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-bold text-blue-900">100%</h4>
+                            <p class="text-sm text-gray-500 uppercase tracking-wide">Charitable Focus</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Education is not just about books; it's about building character and fostering compassion."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl md:text-4xl font-bold serif-title text-blue-900">Our Academic Structure</h3>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+                <p class="text-gray-600 mt-6 max-w-xl mx-auto">We offer a holistic English Medium curriculum designed to build a strong foundation for lifelong learning.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pre-Nursery & Nursery -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border-b-4 border-blue-500 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-6">
+                        <i class="fas fa-shapes fa-2x"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-blue-900 mb-4">Foundational Years</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Pre-Nursery & Nursery focus on play-based learning, social development, and basic motor skills in a nurturing environment.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Sensory Activities</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Storytelling Sessions</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Basic Phonics</li>
+                    </ul>
+                </div>
+
+                <!-- KG to Class 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border-b-4 border-blue-700 hover:shadow-xl transition-shadow scale-105 z-10">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-700 mb-6">
+                        <i class="fas fa-book-open fa-2x"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-blue-900 mb-4">Primary Discovery</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">KG to Class 2 introduces structured learning in English, Math, and Environmental Science through interactive methods.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Bilingual Support</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Numeracy Skills</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Creative Arts</li>
+                    </ul>
+                </div>
+
+                <!-- Class 3 to 5 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border-b-4 border-blue-900 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-900 mb-6">
+                        <i class="fas fa-graduation-cap fa-2x"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-blue-900 mb-4">Junior Mastery</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Class 3 to 5 prepares students for senior schooling with a focus on analytical thinking and academic rigor.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Advanced Grammar</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Science Labs</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Computer Literacy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values / Charitable -->
+    <section class="py-20 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold serif-title mb-12">Why Choose Umrao Singh?</h3>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="p-4">
+                    <i class="fas fa-heart text-red-400 text-3xl mb-4"></i>
+                    <h5 class="font-bold mb-2">Charitable Mission</h5>
+                    <p class="text-sm text-blue-200">Affordable high-quality education for all strata of society.</p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-language text-yellow-400 text-3xl mb-4"></i>
+                    <h5 class="font-bold mb-2">English Medium</h5>
+                    <p class="text-sm text-blue-200">Fluent communication skills developed from day one.</p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-map-pin text-green-400 text-3xl mb-4"></i>
+                    <h5 class="font-bold mb-2">Prime Location</h5>
+                    <p class="text-sm text-blue-200">Easily accessible in the heart of Old Delhi (Chandni Chowk).</p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-users text-blue-400 text-3xl mb-4"></i>
+                    <h5 class="font-bold mb-2">Experienced Faculty</h5>
+                    <p class="text-sm text-blue-200">Teachers dedicated to individual student growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Address Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-gray-50 rounded-3xl overflow-hidden shadow-lg border border-gray-100">
+                <div class="p-8 md:p-16 text-center">
+                    <h3 class="text-3xl font-bold text-blue-900 mb-6 serif-title">Visit Our Campus</h3>
+                    <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+                        For admissions, charitable donations, or general inquiries, please visit our historic campus in person. Our administration office is open for parents and guardians during school hours.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-3 gap-8 text-left">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h6 class="font-bold text-gray-800 mb-2">Address</h6>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                31/35, Chandni Chowk,<br>
+                                New Delhi, Delhi, 110006
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h6 class="font-bold text-gray-800 mb-2">Contact</h6>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Phone: +91 11 2345 6789<br>
+                                Email: info@umraosinghschool.edu
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h6 class="font-bold text-gray-800 mb-2">Timings</h6>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Monday - Saturday<br>
+                                8:00 AM - 2:00 PM
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <a href="https://maps.google.com" target="_blank" class="inline-flex items-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-800 transition shadow-lg">
+                            <i class="fas fa-location-arrow"></i> Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="bg-white text-blue-900 p-2 rounded-lg">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <h4 class="text-xl font-bold">Umrao Singh Nursery Primary School</h4>
+                    </div>
+                    <p class="text-gray-400 max-w-md mb-6">
+                        A charitable institution serving the community since 1939. Dedicated to making quality English Medium education accessible to all children in Old Delhi.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-400 transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-lg font-bold mb-6">Quick Links</h5>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition">About Our Legacy</a></li>
+                        <li><a href="#academics" class="hover:text-white transition">Academics</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact Info</a></li>
+                        <li><a href="#" class="hover:text-white transition">Charitable Initiatives</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-bold mb-6">Location</h5>
+                    <p class="text-gray-400 text-sm mb-4">
+                        31/35, Chandni Chowk,<br>
+                        New Delhi, Delhi 110006
+                    </p>
+                    <a href="https://maps.google.com" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm flex items-center gap-2">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 Umrao Singh Nursery Primary School. All Rights Reserved. A Registered Charitable Trust.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Mobile Menu
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Scroll listener for Nav
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
